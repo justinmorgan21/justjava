@@ -27,6 +27,7 @@
         android:textSize="16sp"
         android:textColor="@android:color/black"
         android:textAllCaps="true" />
+
     <TextView
         android:id="@+id/price_title"
         android:layout_width="wrap_content"
@@ -44,6 +45,7 @@
         android:textSize="16sp"
         android:textColor="@android:color/black"
         android:textAllCaps="true" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
