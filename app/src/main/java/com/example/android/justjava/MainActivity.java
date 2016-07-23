@@ -10,7 +10,7 @@ import android.widget.TextView;
  */
 public class MainActivity extends ActionBarActivity {
 
-    int quantity = 0;
+    int quantity = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,26 +22,25 @@ public class MainActivity extends ActionBarActivity {
      * This method is called when the order button is clicked.
      */
     public void submitOrder(View view) {
-        String priceMessage = "Total: $" + (quantity * 5) + ".00\nThank you!";
-        displayPriceMessage(priceMessage);
+        int price = quantity * 5;
+        String priceMessage = "Total: $" + price + "\nThank you!";
+        displayPrice(priceMessage);
     }
 
     public void increment(View view) {
         quantity++;
-        display(quantity);
-        displayPriceMessage("Total: $" + (quantity * 5) + ".00");
+        displayQuantity(quantity);
     }
 
     public void decrement(View view) {
         quantity--;
-        display(quantity);
-        displayPriceMessage("Total: $" + (quantity * 5) + ".00");
+        displayQuantity(quantity);
     }
 
     /**
      * This method displays the given quantity value on the screen.
      */
-    private void display(int number) {
+    private void displayQuantity(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
@@ -49,7 +48,7 @@ public class MainActivity extends ActionBarActivity {
     /**
      * This method displays the given text on the screen.
      */
-    private void displayPriceMessage(String message) {
+    private void displayPrice(String message) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
         priceTextView.setText(message);
     }
