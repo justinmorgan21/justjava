@@ -14,6 +14,15 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
 
+        <EditText
+            android:id="@+id/name_edit_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Name"
+            android:inputType="textCapWords"
+            />
+
         <TextView
             android:id="@+id/toppings_header"
             android:layout_width="wrap_content"
@@ -50,7 +59,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
 
             <Button
                 android:layout_width="48dp"
@@ -76,24 +86,6 @@
                 android:text="+" />
 
         </LinearLayout>
-
-        <TextView
-            android:id="@+id/price_header"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:text="Order Summary"
-            android:textAllCaps="true" />
-
-        <TextView
-            android:id="@+id/order_summary_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
-            android:paddingTop="16dp"
-            android:text="$10"
-            android:textColor="@android:color/black"
-            android:textSize="16sp" />
 
         <Button
             android:layout_width="wrap_content"
